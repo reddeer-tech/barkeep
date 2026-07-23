@@ -6,17 +6,17 @@
         <description>Most recent updates for BarKeep</description>
     <language>en</language>
     <item>
-            <title>BarKeep 0.0.4</title>
-            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.4/BarKeep-0.0.4-macos.dmg</link>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>0.0.4</sparkle:shortVersionString>
-            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/reddeer-tech/barkeep/main/release-notes-0.0.4.html</sparkle:releaseNotesLink>
-            <pubDate>Thu, 23 Jul 2026 11:58:54 GMT</pubDate>
+            <title>BarKeep 0.0.5</title>
+            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.5/BarKeep-0.0.5-macos.dmg</link>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>0.0.5</sparkle:shortVersionString>
+            <sparkle:releaseNotesLink>https://raw.githubusercontent.com/reddeer-tech/barkeep/main/release-notes-0.0.5.html</sparkle:releaseNotesLink>
+            <pubDate>Thu, 23 Jul 2026 14:07:53 GMT</pubDate>
       <enclosure 
-                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.4/BarKeep-0.0.4-macos.dmg" 
-                length="110847396" 
+                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.5/BarKeep-0.0.5-macos.dmg" 
+                length="110901491" 
         type="application/octet-stream" 
-                sparkle:edSignature="vmCs+q484k8BesdXk36Y7fRjB1SPVvx9Qxs7CubNldK+umR2gysd3NYj4MwMyO3W4IqTjQKkF43ymNZ989fpAA==" />
+                sparkle:edSignature="lWCA3UBBCEKExIsg4bn1bxtD4ThqYgrOfpF+kr8KtcnnufTRbc2zfh6JWy8PA69THUCDSQ4Zyp6TN8EDh/2ZBg==" />
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
     </item>
   </channel>
