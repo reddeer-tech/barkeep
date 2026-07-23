@@ -6,12 +6,18 @@
         <description>Most recent updates for BarKeep</description>
     <language>en</language>
     <item>
-            <title>BarKeep 0.0.8</title>
-            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.8/BarKeep-0.0.8-macos.dmg</link>
-      <sparkle:version>7</sparkle:version>
-      <sparkle:shortVersionString>0.0.8</sparkle:shortVersionString>
+            <title>BarKeep 0.0.9</title>
+            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.9/BarKeep-0.0.9-macos.dmg</link>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>0.0.9</sparkle:shortVersionString>
             <description><![CDATA[
 <h1>What's New</h1>
+<h2>BarKeep 0.0.9</h2>
+<h3>Fixes</h3>
+<ul>
+<li><strong>Location permission now prompts correctly.</strong> The optional Location access (for precise weather) was silently suppressed; enabling it now shows the system prompt as expected.</li>
+<li><strong>Tidier permissions screen.</strong> The permission cards are more compact and fit without scrolling.</li>
+</ul>
 <h2>BarKeep 0.0.8</h2>
 <h3>Custom Macros (text expansion)</h3>
 <ul>
@@ -31,12 +37,12 @@
 <li>Runs as a quiet menu-bar agent; universal (Apple Silicon + Intel); auto-updating via Sparkle.</li>
 </ul>
 ]]></description>
-            <pubDate>Thu, 23 Jul 2026 20:23:32 GMT</pubDate>
+            <pubDate>Thu, 23 Jul 2026 21:10:50 GMT</pubDate>
       <enclosure 
-                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.8/BarKeep-0.0.8-macos.dmg" 
-                length="111030900" 
+                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.9/BarKeep-0.0.9-macos.dmg" 
+                length="111030146" 
         type="application/octet-stream" 
-                sparkle:edSignature="NDj4K365Qizq6JWZLmmk4pVj1/ciwLy1l1baPcyMpTF3H++R54KUJBILPPLJZPojfeHffMwMltH2CVWseByJDw==" />
+                sparkle:edSignature="LcKHbNfIWav+RmFTD06nqIYc7NpscEnthXPWhq34W8HnVl/RaUoZTrW/M3z3blxnn3sf0iVZS1kIwQAo5+qDDw==" />
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
     </item>
   </channel>
