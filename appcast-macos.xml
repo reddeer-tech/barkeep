@@ -6,43 +6,36 @@
         <description>Most recent updates for BarKeep</description>
     <language>en</language>
     <item>
-            <title>BarKeep 0.0.9</title>
-            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.9/BarKeep-0.0.9-macos.dmg</link>
-      <sparkle:version>8</sparkle:version>
-      <sparkle:shortVersionString>0.0.9</sparkle:shortVersionString>
+            <title>BarKeep 0.0.10</title>
+            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.10/BarKeep-0.0.10-macos.dmg</link>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>0.0.10</sparkle:shortVersionString>
             <description><![CDATA[
 <h1>What's New</h1>
-<h2>BarKeep 0.0.9</h2>
+<h2>BarKeep 0.0.10</h2>
 <h3>Fixes</h3>
 <ul>
-<li><strong>Location permission now prompts correctly.</strong> The optional Location access (for precise weather) was silently suppressed; enabling it now shows the system prompt as expected.</li>
-<li><strong>Tidier permissions screen.</strong> The permission cards are more compact and fit without scrolling.</li>
+<li><strong>Download progress shows the real downloaded size</strong> now (e.g. "45 MB", climbing) instead of just an indeterminate bar — with a true percentage bar when the total is known (Safari and App Store downloads). The download icon is a clean blue arrow.</li>
+<li><strong>"What's New" now appears only once per version</strong>, and shows the correct version number and the current release's notes.</li>
 </ul>
-<h2>BarKeep 0.0.8</h2>
-<h3>Custom Macros (text expansion)</h3>
+<h3>Earlier in 0.0.x</h3>
 <ul>
-<li><strong>A new Custom Macros pane.</strong> Type a trigger like <code>EST#</code> and BarKeep replaces it with your output — static text, dynamic tokens (<code>{date}</code>, <code>{time}</code>, <code>{datetime}</code>, <code>{uuid}</code>, <code>{clipboard}</code>), a shell script's result, a pick from a list, or a replayed keystroke sequence. Trigger by a typed abbreviation or a global hotkey. Off by default; keystrokes are matched locally only, never stored, and capture pauses in password fields.</li>
-</ul>
-<h3>Menu bar &amp; notch</h3>
-<ul>
-<li><strong>Reserve space behind the notch</strong> (MacBooks with a notch): an optional toggle inserts a notch-width gap so menu-bar icons don't hide under the cutout.</li>
-<li><strong>Notched-Mac polish</strong>: the expanded island now lays out fully below the physical notch, status dots clear the cutout, and a click-drag inside the island no longer jumps to the file shelf.</li>
-</ul>
-<h3>Weather</h3>
-<ul>
-<li><strong>Optional precise location.</strong> Grant Location (asked only when you open Weather, and skippable) for weather exactly where you are; otherwise it keeps using approximate IP-based location.</li>
+<li><strong>Custom Macros</strong> — type a trigger like <code>EST#</code> and BarKeep replaces it with text, dynamic tokens (<code>{date}</code>, <code>{uuid}</code>, <code>{clipboard}</code>), a shell script's output, a list pick, or a keystroke sequence; triggered by an abbreviation or a global hotkey.</li>
+<li><strong>Reserve space behind the notch</strong> so menu-bar icons don't hide under the cutout (MacBooks with a notch).</li>
+<li><strong>Optional precise-location weather</strong> (skippable; IP-based otherwise).</li>
+<li>Notched-Mac layout polish, tidier permissions screen, and various fixes.</li>
 </ul>
 <h3>System</h3>
 <ul>
 <li>Runs as a quiet menu-bar agent; universal (Apple Silicon + Intel); auto-updating via Sparkle.</li>
 </ul>
 ]]></description>
-            <pubDate>Thu, 23 Jul 2026 21:10:50 GMT</pubDate>
+            <pubDate>Thu, 23 Jul 2026 21:42:40 GMT</pubDate>
       <enclosure 
-                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.9/BarKeep-0.0.9-macos.dmg" 
-                length="111030146" 
+                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.10/BarKeep-0.0.10-macos.dmg" 
+                length="111040272" 
         type="application/octet-stream" 
-                sparkle:edSignature="LcKHbNfIWav+RmFTD06nqIYc7NpscEnthXPWhq34W8HnVl/RaUoZTrW/M3z3blxnn3sf0iVZS1kIwQAo5+qDDw==" />
+                sparkle:edSignature="xUBubg6VPiB5piCRt7UCv+1KHQ3FDs6G3KsKrQHrJ1w/Jnt6JPGElaqsHjZqdLZS/g/UjTEYLXGI0bBCHO7BAA==" />
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
     </item>
   </channel>
