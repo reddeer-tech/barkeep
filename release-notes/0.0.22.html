@@ -1,16 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-        <title>BarKeep Updates</title>
-        <link>https://raw.githubusercontent.com/reddeer-tech/barkeep/main/appcast-macos.xml</link>
-        <description>Most recent updates for BarKeep</description>
-    <language>en</language>
-    <item>
-            <title>BarKeep 0.0.22</title>
-            <link>https://github.com/reddeer-tech/barkeep/releases/download/v0.0.22/BarKeep-0.0.22-macos.dmg</link>
-      <sparkle:version>21</sparkle:version>
-      <sparkle:shortVersionString>0.0.22</sparkle:shortVersionString>
-            <description><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <title>BarKeep v0.0.22 Release Notes</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1d1d1f;
+            --muted: #6e6e73;
+            --link: #0066cc;
+            --code-bg: #f0f0f2;
+            --code-fg: #1d1d1f;
+            --border: #d2d2d7;
+            --quote-bg: #f5f5f7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1e1e1e;
+                --fg: #f5f5f7;
+                --muted: #a1a1a6;
+                --link: #4ea3ff;
+                --code-bg: #2c2c2e;
+                --code-fg: #f5f5f7;
+                --border: #3a3a3c;
+                --quote-bg: #2c2c2e;
+            }
+        }
+        html, body {
+            background: var(--bg);
+            color: var(--fg);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+            padding: 20px;
+            line-height: 1.55;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1 { font-size: 22px; margin: 0 0 14px; font-weight: 600; }
+        h2 { font-size: 17px; margin: 22px 0 8px; font-weight: 600; }
+        h3 { font-size: 15px; margin: 18px 0 6px; font-weight: 600; }
+        h4, h5, h6 { font-size: 14px; margin: 14px 0 6px; font-weight: 600; }
+        p { margin: 8px 0; }
+        ul, ol { padding-left: 22px; margin: 8px 0; }
+        li { margin: 4px 0; line-height: 1.55; }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: var(--code-bg);
+            color: var(--code-fg);
+            padding: 1px 5px;
+            border-radius: 4px;
+            font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+            font-size: 12.5px;
+        }
+        pre {
+            background: var(--code-bg);
+            color: var(--code-fg);
+            padding: 10px 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 12.5px;
+            line-height: 1.5;
+        }
+        pre code { background: none; padding: 0; border-radius: 0; }
+        blockquote {
+            margin: 10px 0;
+            padding: 6px 12px;
+            border-left: 3px solid var(--border);
+            background: var(--quote-bg);
+            color: var(--muted);
+        }
+        blockquote p { margin: 4px 0; }
+        hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
 <h1>What's New</h1>
 <h2>BarKeep 0.0.22</h2>
 <h3>Friends &amp; chat fixes 🛠</h3>
@@ -162,14 +229,5 @@
 <ul>
 <li>Runs as a quiet menu-bar agent; universal (Apple Silicon + Intel); auto-updating via Sparkle.</li>
 </ul>
-]]></description>
-            <pubDate>Mon, 27 Jul 2026 16:04:28 GMT</pubDate>
-      <enclosure 
-                url="https://github.com/reddeer-tech/barkeep/releases/download/v0.0.22/BarKeep-0.0.22-macos.dmg" 
-                length="117134942" 
-        type="application/octet-stream" 
-                sparkle:edSignature="cn7tUAiKyeLadDLK0gjxVJ9XEVzIi5YPpAVRb9IwmPTGQG/6o9+KeVXr2+t6bAvGR3qJltxmOkd+pUgtPkhGAA==" />
-            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
-    </item>
-  </channel>
-</rss>
+</body>
+</html>
