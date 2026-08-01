@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+        <title>BarKeep Updates</title>
+        <link>https://raw.githubusercontent.com/reddeer-tech/barkeep/main/appcast-macos.xml</link>
+        <description>Most recent updates for BarKeep</description>
+    <language>en</language>
+    <item>
+            <title>BarKeep 1.0.0</title>
+            <link>https://github.com/reddeer-tech/barkeep/releases/download/v1.0.0/BarKeep-1.0.0-macos.dmg</link>
+      <sparkle:version>28</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <description><![CDATA[
+<h1>What's New</h1>
+<h2>BarKeep 1.0.0</h2>
+<p>The first stable release. BarKeep requires <strong>macOS 15 (Sequoia) or later</strong>.</p>
+<h3>One app for your menu bar and your notch ✨</h3>
+<ul>
+<li><strong>Tidy the menu bar</strong> — a Hidden section and an Always-Hidden section, revealed by click, hover, a two-finger swipe, a hot corner, a keyboard shortcut, or a drop-down bar. Drag your icons into the order you want and it sticks.</li>
+<li><strong>Presets and triggers</strong> so your bar changes itself depending on the app you're in, the display you're on, or the time of day.</li>
+<li><strong>Nothing gets lost.</strong> When macOS runs out of room it silently drops icons; BarKeep moves them somewhere you can still reach them.</li>
+<li><strong>Style it</strong> — tint, opacity, gradients, borders, rounded corners, or split the bar around the notch.</li>
+</ul>
+<h3>The notch, put to work 🏝</h3>
+<p>An island over the notch — or a floating pill if your Mac hasn't got one — with <strong>Home</strong> blocks you arrange yourself, plus Music, Calendar, Meetings, Weather, News, Email, Notifications, Files &amp; Shelf, Clipboard, Notes, AI Agents, Battery, Live Activities and a built-in Terminal. Volume and brightness get proper HUDs instead of the system ones.</p>
+<h3>Friends, chat and games 👥</h3>
+<p>Create an account to sync your settings between Macs, add friends, chat, see who's around, and play together — over the local network or online.</p>
+<h3>BarKeep Premium 💳</h3>
+<p><strong>Everything on your own Mac and your local network stays free, forever.</strong> That includes accounts, friends, presence, reading messages, and playing over LAN.</p>
+<p>Premium covers the three things that cost us server time: <strong>hosting</strong> online games (your friends can always join for free), <strong>sending</strong> messages (receiving is always free), and <strong>pushing</strong> your settings to the cloud (pulling them back is free). Available monthly or as a one-time lifetime purchase — and if you're on monthly you can move to lifetime any time, with what you've already paid this period credited.</p>
+<h3>Also in this release</h3>
+<ul>
+<li>A <strong>Feedback</strong> page in Settings, so you can tell us what's wrong without leaving the app.</li>
+<li>Settings now looks properly native — a floating sidebar, grouped rows, and it follows your Mac's sidebar size.</li>
+<li>Crash reports carry readable stack traces, so problems get fixed rather than guessed at.</li>
+</ul>
+]]></description>
+            <pubDate>Sat, 01 Aug 2026 15:26:51 GMT</pubDate>
+      <enclosure 
+                url="https://github.com/reddeer-tech/barkeep/releases/download/v1.0.0/BarKeep-1.0.0-macos.dmg" 
+                length="118845493" 
+        type="application/octet-stream" 
+                sparkle:edSignature="GsrUHRCGlXNZDEpPpnUbp3BV9Z/6+lfHnD1kU+cUf4UaLCc3tOAAfRvdKoyKeqP8BWuovJPAVdfHfK4W4uAoDg==" />
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+    </item>
+  </channel>
+</rss>
