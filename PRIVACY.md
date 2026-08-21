@@ -27,6 +27,14 @@ now-playing). This information is used only to render BarKeep's on-screen featur
 is never transmitted to RedDeer. These are optional, permission-gated macOS features you control
 in System Settings.
 
+If you use Claude Code or Cursor on this Mac, BarKeep's optional AI features read the local
+session logs those tools already keep, to show your agents' activity in the notch. The
+session-coordination feature additionally keeps a small local database under `~/.claude/coord`
+(readable only by your macOS user) holding short summaries of what each AI session is doing and
+the messages sessions exchange with each other. All of it stays on your Mac — none of it is
+uploaded anywhere — and switching coordination off removes BarKeep's entries from your Claude
+configuration and stops all logging.
+
 ## Email accounts (Gmail and Outlook)
 
 If you connect an email account, BarKeep uses OAuth 2.0 to obtain **read-only** access
@@ -116,6 +124,16 @@ the app at the crash — never your documents, messages, or email data.
 ## Changes
 
 We may update this policy; the "Last updated" date reflects the latest revision.
+
+## Mobile companion
+
+If you use the BarKeep mobile app with the same account, your Mac can relay live data to your
+phone **through our server, transiently — never stored**: system vitals (CPU/memory/battery),
+what's playing, your Mac's reminders list, and — only while the "Share clipboard with my
+devices" switch on your Mac is on (it's on by default and lives in the companion settings) —
+the text of recent clipboard entries, capped and truncated. Remote-control commands from the
+phone (play/pause, timers, reminders) travel the same transient relay. Turning the companion
+switch off on the Mac stops all of it.
 
 ## Contact
 
