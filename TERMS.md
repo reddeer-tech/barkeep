@@ -35,7 +35,7 @@ Premium is sold through Google Play, the App Store or our website, and the selle
 
 ## Deleting your account
 
-In the phone app: Settings, Manage account, Delete account. On the Mac: Settings, Account, Delete account. Without the app, email admin@reddeer.ai from the email address on your account and we will delete it within 30 days. Deleting in the app closes the account straight away. It is erased no sooner than 30 days later, and until then you can restore it by signing in to the phone app and tapping Restore account.
+In the phone app: Settings, Manage account, Delete account. On the Mac: Settings, Account, Delete account. Without the app, email admin@reddeer.ai from the email address on your account and we will delete it within 30 days. Deleting in the app closes the account straight away, and it is erased 30 days later. Until then you can restore it by signing in to the phone app and tapping Restore account.
 
 ## Changes and contact
 

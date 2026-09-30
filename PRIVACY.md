@@ -15,7 +15,7 @@ what they store.
 - Your **email data never leaves your Mac** — BarKeep collects no analytics about your email or
   its contents.
 - Optional online features store only what they need (listed below). Deleting your account
-  removes it no sooner than 30 days after the account closes, apart from billing records, reports
+  removes it 30 days after the account closes, apart from billing records, reports
   of abuse and requests made on our account deletion web page, which we keep (see below).
 - The BarKeep Mac app collects **anonymous usage statistics by default** — named feature events
   only, never content — and you can turn this off in **Settings → General → Privacy**.
@@ -95,7 +95,7 @@ sync. When you use these, RedDeer's servers store:
   online game can tell when the invite reaches a device where BarKeep is open.
 
 **Deleting your account** (on the Mac: Settings, Account; on the phone: Settings, Manage account)
-closes it straight away, and we erase the data above no sooner than 30 days later. Without the
+closes it straight away, and we erase the data above 30 days later. Without the
 app, email admin@reddeer.ai from the email address on your account and we will delete it within
 30 days. Deleting your account does not delete billing records (see Payments) or reports of abuse
 (see The BarKeep mobile app).
@@ -219,7 +219,7 @@ iPhone.
 
 Deleting your account: in the phone app go to Settings, Manage account, Delete account (on the Mac
 it is under Settings, Account). Deleting in the app closes the account straight away, and we erase
-the data above no sooner than 30 days later. Until then you can get the account back by signing in
+the data above 30 days later. Until then you can get the account back by signing in
 to the phone app and tapping Restore account. Without the app, email admin@reddeer.ai from the
 email address on your account and we will delete it within 30 days. Billing records and the
 reports described above stay after the account is erased, and if you asked through our account
