@@ -6,7 +6,7 @@ These terms cover your BarKeep account and the online features of the BarKeep ap
 
 ## Your account
 
-You must be at least 16 to create an account. Keep your password to yourself; you are responsible for what happens under your account.
+You must be at least 16 to create an account, and if you are under 18 a parent or guardian must agree to these terms for you. Keep your password to yourself; you are responsible for what happens under your account.
 
 ## What you must not do
 
@@ -27,7 +27,7 @@ You can block a friend in the Mac app or the phone app, and in the phone app you
 
 ## AI sessions
 
-The AI tab controls the Claude Code or Cursor tool on your own Mac under your own account with that provider. Their terms apply to what it does and produces, and you are responsible for the folders and permissions you allow it.
+The AI tab controls the Claude Code or Cursor tool on your own Mac under your own account with that provider. Their terms apply to what it does and produces, including their minimum age, and you are responsible for the folders and permissions you allow it.
 
 ## Premium
 
