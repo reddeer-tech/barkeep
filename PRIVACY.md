@@ -217,12 +217,14 @@ device backups and out of transfers to a new phone. On iPhone it is kept in the 
 which is part of your iPhone backups, and restoring an encrypted backup can move it to a new
 iPhone.
 
-Deleting your account: in the phone app go to Settings, Manage account, Delete account (on the Mac
+### Deleting your account
+
+In the phone app go to Settings, Manage account, Delete account (on the Mac
 it is under Settings, Account). Deleting in the app closes the account straight away, and we erase
 the data above 30 days later. Until then you can get the account back by signing in
 to the phone app and tapping Restore account. Without the app, email admin@reddeer.ai from the
-email address on your account and we will delete it within 30 days. Billing records and the
-reports described above stay after the account is erased, and if you asked through our account
+email address on your account and we will delete it within 30 days. Billing records (kept for at least 7 years, see Payments) and
+the reports described above stay after the account is erased, and if you asked through our account
 deletion web page we also keep that request, with the email address, IP address and browser it
 came from. A subscription bought on our website is cancelled when the account closes and is not
 restored with it. A Google Play or App Store subscription is billed by Google or Apple, please
