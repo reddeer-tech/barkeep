@@ -6,7 +6,7 @@ These terms cover your BarKeep account and the online features of the BarKeep ap
 
 ## Your account
 
-You must be at least 18 to create an account. Keep your password to yourself; you are responsible for what happens under your account.
+You must be at least 16 to create an account. Keep your password to yourself; you are responsible for what happens under your account.
 
 ## What you must not do
 
