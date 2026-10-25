@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <title>BarKeep v1.0.18 Release Notes</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1d1d1f;
+            --muted: #6e6e73;
+            --link: #0066cc;
+            --code-bg: #f0f0f2;
+            --code-fg: #1d1d1f;
+            --border: #d2d2d7;
+            --quote-bg: #f5f5f7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1e1e1e;
+                --fg: #f5f5f7;
+                --muted: #a1a1a6;
+                --link: #4ea3ff;
+                --code-bg: #2c2c2e;
+                --code-fg: #f5f5f7;
+                --border: #3a3a3c;
+                --quote-bg: #2c2c2e;
+            }
+        }
+        html, body {
+            background: var(--bg);
+            color: var(--fg);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+            padding: 20px;
+            line-height: 1.55;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1 { font-size: 22px; margin: 0 0 14px; font-weight: 600; }
+        h2 { font-size: 17px; margin: 22px 0 8px; font-weight: 600; }
+        h3 { font-size: 15px; margin: 18px 0 6px; font-weight: 600; }
+        h4, h5, h6 { font-size: 14px; margin: 14px 0 6px; font-weight: 600; }
+        p { margin: 8px 0; }
+        ul, ol { padding-left: 22px; margin: 8px 0; }
+        li { margin: 4px 0; line-height: 1.55; }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: var(--code-bg);
+            color: var(--code-fg);
+            padding: 1px 5px;
+            border-radius: 4px;
+            font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+            font-size: 12.5px;
+        }
+        pre {
+            background: var(--code-bg);
+            color: var(--code-fg);
+            padding: 10px 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 12.5px;
+            line-height: 1.5;
+        }
+        pre code { background: none; padding: 0; border-radius: 0; }
+        blockquote {
+            margin: 10px 0;
+            padding: 6px 12px;
+            border-left: 3px solid var(--border);
+            background: var(--quote-bg);
+            color: var(--muted);
+        }
+        blockquote p { margin: 4px 0; }
+        hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
+<h1>What's New</h1>
+<h2>BarKeep 1.0.18</h2>
+<h3>Works with the new menu bar in macOS 27</h3>
+<ul>
+<li>macOS 27 draws the menu bar in a new way that earlier versions of BarKeep could not read, so nothing was hidden and icons could sit under the island. BarKeep reads it now, your hidden icons stay hidden and the island stays clear</li>
+<li>Icons flow around the island, also when it grows for music, a meeting, a timer or a download, and when a control pill sits beside it</li>
+<li>Clicking the double arrow macOS shows for hidden icons now reveals them in the menu bar, the same as BarKeep's own arrow</li>
+<li>Clicking a BarKeep spacer works like clicking empty menu bar space</li>
+<li>The Layout pane shows each item the way it looks in your menu bar, at the same size as the rest</li>
+<li>The island stays out of the way while the Layout pane is open</li>
+<li>Your icons no longer jump around while BarKeep starts or when you switch apps</li>
+<li>On a wide display some apps leave macOS 27 no room to hide icons, while one of them is in front your hidden icons show in line with the rest, with no gap</li>
+<li>Hidden icons you reveal again no longer hide early</li>
+</ul>
+<h3>See which apps use your network</h3>
+<ul>
+<li>The Stats tab's Network panel now lists the processes using your network the most, with their download and upload, and you can quit one from the list</li>
+<li>In every Stats process list, the quit button only appears where quitting can work</li>
+</ul>
+<h3>BarKeep in your language</h3>
+<ul>
+<li>BarKeep is now available in French, German, Spanish, Russian and Arabic, with a right-to-left layout in Arabic. It follows your Mac's language, or you can pick one in Settings → General → Language</li>
+</ul>
+<h3>Easier to use with VoiceOver</h3>
+<ul>
+<li>VoiceOver now reads the Layout pane's sections and items and the settings sidebar</li>
+</ul>
+<h2>BarKeep 1.0.17</h2>
+<h3>Names and messages show exactly as typed</h3>
+<ul>
+<li>Names and messages from other people now always show as plain text, in your friends list, friend</li>
+</ul>
+<p>requests, chats, game invites and lobbies, and nearby transfers. This fixes a security issue in   how they were displayed</p>
+<h3>BarKeep quits cleanly again</h3>
+<ul>
+<li>Quitting BarKeep could end in a crash instead of a clean exit, it now quits cleanly</li>
+</ul>
+<h3>Swarmfall has new art</h3>
+<ul>
+<li>The aliens and your ship in Swarmfall have been redrawn</li>
+</ul>
+<h2>BarKeep 1.0.16</h2>
+<h3>The island gets out of the way of full-screen apps</h3>
+<ul>
+<li><strong>When an app goes full screen, the island now hides itself.</strong> macOS hides the menu bar for a</li>
+</ul>
+<p>full-screen app, but the island is a floating window that sat above it — so it stayed on top of   your video, your presentation or your game while every other menu-bar icon disappeared. It now   steps aside, and so do the small action pills beside it: meeting controls, a running timer, a   download in progress.</p>
+<ul>
+<li><strong>Volume and brightness still flash through.</strong> They show for a moment and go, and with the menu</li>
+</ul>
+<p>bar hidden the island is the only place they can appear at all — so hiding them too would have   left you pressing the keys with no feedback.</p>
+<ul>
+<li><strong>Only the screen the island is on is affected.</strong> Going full screen on a second monitor leaves</li>
+</ul>
+<p>the island where it is.</p>
+<ul>
+<li><strong>This one is on by default.</strong> If you would rather keep the island visible, switch it off in</li>
+</ul>
+<p>Settings → Notch Island → General.</p>
+<h3>The right edge of the closed pill reads as one group</h3>
+<ul>
+<li>**The status dots, the second-activity badge and the spacing between them were three different</li>
+</ul>
+<p>sizes.** When more than one thing was running, the badge was more than twice the size of the dots   beside it and the space before it was double the space between them, so it read as a separate   object parked next to the dots rather than part of the same row. They are one size and one rhythm   now.</p>
+<ul>
+<li><strong>The empty space between your activity and those indicators is gone.</strong> There was a gap that grew</li>
+</ul>
+<p>with how much was running — around 14 pixels with one thing active and up to 66 with four — which   is what made the island look stretched and the indicators look stranded on the far right. It is a   consistent few pixels at any number of activities.</p>
+<ul>
+<li><strong>The pill is narrower as a result</strong>, because that space was being reserved rather than used.</li>
+</ul>
+<h3>Smaller fixes</h3>
+<ul>
+<li><strong>The agent monitor drew a plain diamond</strong> when it was the second thing running, which is the</li>
+</ul>
+<p>generic mark for "an extension is showing something" and told you nothing about which. It now   shows its own mark, the same one it uses everywhere else.</p>
+<ul>
+<li><strong>The tick on a finished download or transfer</strong> was the one icon on the pill with no size set, so</li>
+</ul>
+<p>it was drawn at whatever size the system happened to give it.</p>
+<h2>BarKeep 1.0.15</h2>
+<h3>A card in Stats sat lower than the rest</h3>
+<ul>
+<li><strong>The CPU card's dial and label were about 18 pixels below the other four.</strong> Each card keeps a</li>
+</ul>
+<p>small line of detail under its name — how much memory, how many GPU cores, how full the disk is.   Some Macs don't report a CPU temperature, and on those the CPU card had no line to show, so the   whole card quietly re-centred itself and stopped lining up with its neighbours. All five now sit   on the same line whether or not they have that detail to show.</p>
+<h2>BarKeep 1.0.14</h2>
+<h3>Settings you change on your phone now take effect straight away</h3>
+<ul>
+<li><strong>A setting changed on your phone used to wait for a restart.</strong> BarKeep wrote it down and then</li>
+</ul>
+<p>carried on with the old value until you next quit and reopened it, so the phone reported a change   that hadn't actually happened. Nearly everything now applies the moment it arrives: the island and   its tabs, live activities, the volume and brightness HUDs, notifications, news, sounds, the Dock   icon, the lock screen, and most of the rest.</p>
+<ul>
+<li><strong>The handful that genuinely still need a relaunch say so</strong>, in Settings under Sync, instead of</li>
+</ul>
+<p>looking like they worked.</p>
+<h3>The closed island</h3>
+<ul>
+<li><strong>The icons on the closed pill are real system icons now.</strong> The volume, brightness and Bluetooth</li>
+</ul>
+<p>HUDs had been drawing emoji, and a connected pair of AirPods could paint the literal text   "airpods.pro" across the pill. A keyboard-backlight change showed nothing at all.</p>
+<ul>
+<li><strong>Everything on the pill lines up.</strong> The spacing had drifted into five different values, so an</li>
+</ul>
+<p>icon sat at a different distance from the edge depending on which one it was. There is one   measurement now, worked out from the pill's own rounded corner, so nothing is clipped by it.</p>
+<ul>
+<li><strong>A second thing happening at the same time is finally visible.</strong> A timer running under music used</li>
+</ul>
+<p>to disappear from the closed pill completely: no pill of its own, and not even a dot. It now shows   as a small icon beside whatever currently owns the pill.</p>
+<ul>
+<li><strong>The lock-screen icon had never shipped</strong>, so locking your Mac fell back to a generic symbol.</li>
+</ul>
+<h3>Chatting with Claude from your phone</h3>
+<ul>
+<li><strong>Long replies now reach your phone in full.</strong> When a reply was too big to send in one piece,</li>
+</ul>
+<p>everything after the first piece was thrown away, and your phone was told nothing was missing.</p>
+<ul>
+<li><strong>Replies in any language other than English were being dropped entirely.</strong> The size limit was</li>
+</ul>
+<p>measured in the wrong unit, so anything with accents, Cyrillic, Chinese, Japanese, Korean or emoji   was silently refused rather than sent. This one is fixed by updating your Mac alone.</p>
+<ul>
+<li><strong>Catching up after your phone has been asleep is reliable again</strong>, including when you have more</li>
+</ul>
+<p>than one device signed in. Update the BarKeep app on your phone as well to get the whole of this   one, since both halves had to change.</p>
+<h2>BarKeep 1.0.13</h2>
+<h3>Getting back online by itself</h3>
+<ul>
+<li><strong>BarKeep no longer stays signed out after a bad start.</strong> If it couldn't reach the servers the</li>
+</ul>
+<p>moment it launched — a slow network, a captive portal, a VPN still coming up, a security tool   briefly in the way — it would sit signed out until you happened to lock and unlock your Mac.   It now keeps trying on its own, waiting a little longer between attempts, and signs itself back   in as soon as the connection is there. Your saved sign-in is still only ever discarded when the   server actually rejects it, never because the network hiccuped.</p>
+<ul>
+<li><strong>Connection problems now say what they were.</strong> A blocked or intercepted connection used to look</li>
+</ul>
+<p>exactly like no internet at all. BarKeep now records which it was — including the name of a   security tool or proxy whose certificate it doesn't trust — so a problem that only happens on   your machine can actually be tracked down instead of guessed at.</p>
+<h2>BarKeep 1.0.12</h2>
+<h3>Set your Focus, don't just watch it</h3>
+<ul>
+<li><strong>BarKeep can now turn a Focus on and off</strong>, not only notice one. Start a meeting and the Focus</li>
+</ul>
+<p>you picked switches on; the meeting ends and it switches back off.</p>
+<ul>
+<li><strong>Every Focus is recognised properly now.</strong> Work, Personal, Sleep, Gaming and your own custom</li>
+</ul>
+<p>modes used to all show up as "Do Not Disturb" unless BarKeep had Full Disk Access. It reads the   real one without needing that, and anything it genuinely can't identify says "Focus" rather than   claiming to be Do Not Disturb.</p>
+<h3>Clocks that were quietly wrong</h3>
+<ul>
+<li><strong>The red "now" line in your calendar sat in the wrong place.</strong> It could show a meeting as still</li>
+</ul>
+<p>to come after it had already finished — while the strip directly above it showed the correct   time. Anywhere BarKeep shows you how long until something, it now keeps proper time even after   the island has been closed for hours.</p>
+<ul>
+<li><strong>Reminders now judge "overdue" against the real time</strong>, so urgency stops going stale.</li>
+<li><strong>Less work while you're away.</strong> Tiles that used to keep running when your Mac was locked now</li>
+</ul>
+<p>stop properly, and start again when you come back.</p>
+<h3>Settings that stick</h3>
+<ul>
+<li><strong>A setting synced from another Mac can no longer land in a bad state.</strong> Values that only have a</li>
+</ul>
+<p>few valid choices are now checked when they're read, not just when you set them — so a setting   arriving from your account, from an older build, or from a reset always ends up somewhere sane   instead of silently changing how something looks.</p>
+<h2>BarKeep 1.0.11</h2>
+<h3>Answer your Mac's questions from your phone</h3>
+<ul>
+<li><strong>Turn it on in Settings → AI Sessions.</strong> When a chat running on your Mac — in VS Code, in a</li>
+</ul>
+<p>terminal, anywhere — stops to ask you something, the question comes to your phone and your answer   goes straight back to it. The chat carries on without you walking to your desk.</p>
+<ul>
+<li><strong>On by default, and it stays out of the way.</strong> It only ever steps in for questions, and only</li>
+</ul>
+<p>while your Mac is actually connected. If anything at all goes wrong — or nobody answers — the   question simply appears on your Mac as it always has. Turn it off in Settings → AI Sessions.</p>
+<ul>
+<li><strong>Plans still get approved on the Mac</strong> for now — approving one from the phone isn't reliable yet,</li>
+</ul>
+<p>and quietly losing your approval would be worse than asking you to walk over.</p>
+<h3>Your phone finally sees what your Mac is asking</h3>
+<ul>
+<li><strong>A question or plan waiting for you now shows up on your phone.</strong> If a chat is sitting on a</li>
+</ul>
+<p>question — or asking you to approve a plan — you'll see the real card when you open it, with the   options laid out, instead of a bare line you can't act on.</p>
+<ul>
+<li><strong>It survives leaving the chat.</strong> Step out to check something and come back: the card is still</li>
+</ul>
+<p>there, still waiting. Previously it vanished on the way back in while your Mac sat blocked.</p>
+<ul>
+<li><strong>Chats running elsewhere on your Mac are no longer mistaken for finished ones.</strong> A session you</li>
+</ul>
+<p>started in VS Code or a terminal now shows as running, with its pending question mirrored so you   can read it from anywhere. Answering that one still happens on the Mac that owns it.</p>
+<h3>The "/" menu shows the skills that folder actually has</h3>
+<ul>
+<li><strong>Project skills now appear.</strong> Typing "/" on your phone lists the skills belonging to the folder</li>
+</ul>
+<p>you're working in, not a leftover list from wherever a session last happened to start. Skills you   keep in a project's own .claude folder show up alongside your global ones.</p>
+<h3>A clearer signal that Claude is thinking</h3>
+<ul>
+<li><strong>No more wondering if it's stuck.</strong> Some models keep their reasoning private, so a long think</li>
+</ul>
+<p>used to look like an idle chat. There's now a small "Working..." indicator whenever a reply is   genuinely in progress with nothing on screen yet.</p>
+<h2>BarKeep 1.0.10</h2>
+<h3>Meet the Agents pool</h3>
+<ul>
+<li><strong>Every Claude Code session on your Mac, in one place.</strong> The AI Agents tile gains a live pool view — see which sessions are active and what each one is doing right now, follow a shared activity feed and task board, and read the messages sessions leave for each other. It works for terminal, editor, and phone-driven sessions alike, and everything stays on your Mac.</li>
+<li><strong>Nothing to set up.</strong> Sessions join the pool automatically. Prefer to opt out? Flip off "Session coordination" in AI Sessions settings and BarKeep steps back out just as cleanly.</li>
+<li><strong>The surprise keychain prompt is gone.</strong> Reading Claude Code usage details from the login keychain is now strictly opt-in, so most users will never see that permission dialog again.</li>
+</ul>
+<h3>Menu bar rearranging, calmer and truer</h3>
+<ul>
+<li><strong>One reveal per rearrange.</strong> While BarKeep tidies the bar, hidden icons now step aside once for the whole operation instead of blinking in and out with every single move.</li>
+<li><strong>Drops respond instantly.</strong> The Layout page reflects a drag the moment you let go, and the item you dropped next to is tracked precisely — even among lookalike icons.</li>
+<li><strong>No more duplicate tiles.</strong> Apps that quietly recreate their menu bar item no longer show up twice in the Layout page.</li>
+<li><strong>Steadier rows and labels.</strong> The Layout page skips redraws when nothing visibly changed, drag previews match the real icon exactly, and row captions always name the right item.</li>
+</ul>
+<h3>Notch &amp; polish</h3>
+<ul>
+<li><strong>The calendar tab shows more of your day.</strong> Opening a date now gives events room for two to three entries at a glance instead of one.</li>
+<li><strong>Lighter on your system.</strong> Appearance checks no longer do any work unless your Mac actually switches between light and dark mode.</li>
+</ul>
+<h2>BarKeep 1.0.9</h2>
+<h3>Menu Bar Layout that finally sticks</h3>
+<ul>
+<li><strong>Drag it once, keep it forever.</strong> Moving icons between Shown, Hidden and Always Hidden — in the Layout page or right on the menu bar — is now saved instantly and restored automatically at every launch. No buttons to press; your arrangement simply maintains itself.</li>
+<li><strong>Smoother, more reliable rearranging.</strong> Drags land where you drop them, the item follows your intent instead of ping-ponging between rows, and your mouse pointer no longer moves while BarKeep tidies the bar for you.</li>
+<li><strong>The Layout page stays calm.</strong> No more flickering rows, lost scroll positions, or tiles vanishing mid-drag when you move things quickly.</li>
+</ul>
+<h3>Real names and icons for every item</h3>
+<ul>
+<li><strong>Hosted menu bar items are finally identified.</strong> Items that macOS groups under Control Center — common with modern apps — now show their real app name and icon instead of a generic placeholder, in the Layout page and the reveal bar.</li>
+<li><strong>Icons load instantly and stay right.</strong> Hidden items keep their true icons across restarts, and nothing ever wears another app's artwork.</li>
+</ul>
+<h3>Notch &amp; reliability</h3>
+<ul>
+<li><strong>Icons flow around the notch more dependably</strong>, including on busy bars and while activities are showing.</li>
+<li><strong>Clearer guidance when Screen Recording permission is missing</strong> — BarKeep now tells you exactly what to enable instead of silently doing nothing.</li>
+<li><strong>Assorted fixes</strong> for rare cases where the app could be left waiting on a stuck rearrangement, and for leftover helper processes after quitting.</li>
+</ul>
+<h2>BarKeep 1.0.8</h2>
+<p>###</p>
+<p>-</p>
+<h2>BarKeep 1.0.7</h2>
+<p>###</p>
+<p>-</p>
+<h2>BarKeep 1.0.5</h2>
+<h3>Send files from the Shelf 📤</h3>
+<p>The Shelf has always been the place to park files. Now it can hand them on.</p>
+<ul>
+<li><strong>Send anything on the Shelf to another Mac running BarKeep</strong>, straight over your local network — a send button on each item, and "Send to nearby…" in its menu.</li>
+<li><strong>Send to an Android phone</strong> with Quick Share: BarKeep shows a QR code, the phone scans it, the file arrives.</li>
+<li><strong>A new Nearby tab in the island</strong> lists the devices around you and lets you receive too. Unknown senders always ask first; devices you trust can skip the prompt, and you can block one for good.</li>
+<li>The first time it runs, macOS will ask whether BarKeep may find devices on your local network. That's this feature — say yes and it works, say no and only the sending half stops.</li>
+</ul>
+<h3>Seven new games 🎮</h3>
+<ul>
+<li><strong>Pipes</strong> — rotate the pieces to join the pipeline.</li>
+<li><strong>Bridges</strong> — link the islands.</li>
+<li><strong>Bridge Builder</strong> — draw beams strong enough to carry the cart.</li>
+<li><strong>Water Route</strong> — channel the water into the jar.</li>
+<li><strong>Dungeon Run</strong> — descend, fight, survive.</li>
+<li><strong>Room Escape</strong> — solve the room, get out.</li>
+<li><strong>Quest</strong> — a journey that remembers you.</li>
+</ul>
+<h2>BarKeep 1.0.4</h2>
+<h3>Calendar and notes 📝</h3>
+<ul>
+<li><strong>Notes open in their own screen</strong> in the island, with room to read and edit.</li>
+<li><strong>The event editor grew up</strong> — set alerts, repeat rules, and which calendar or list an item belongs to, with a proper date and time picker.</li>
+<li><strong>Times follow your Mac's 12- and 24-hour setting</strong> wherever BarKeep shows them.</li>
+</ul>
+<h2>BarKeep 1.0.3</h2>
+<h3>Your icons stay clear of the island 🏝</h3>
+<ul>
+<li><strong>Menu-bar icons no longer creep under the notch.</strong> BarKeep reserves exactly the space the island needs and holds it steady, instead of nudging your icons around as the island changes width.</li>
+<li><strong>It works from a cold start</strong>, not just after the island has been opened once, and it repairs itself if something else shifts your bar.</li>
+</ul>
+<h3>Calendar and reminders, in the island 📅</h3>
+<ul>
+<li><strong>Tap an event or reminder to open it right there</strong> — full details without leaving BarKeep, and an editor for changing them.</li>
+</ul>
+<h3>Fixes 🐛</h3>
+<ul>
+<li><strong>Esc and ⌘W now close what you'd expect</strong>, working back out through search, then any open detail, then the island itself.</li>
+<li><strong>⌘F opens the search box</strong> for the tab you're actually on.</li>
+</ul>
+<h2>BarKeep 1.0.2</h2>
+<h3>Calendar and reminders 📅</h3>
+<ul>
+<li><strong>A red "now" line in the day list</strong>, the way Calendar draws it, and the list centres itself on the current time when you open it.</li>
+<li><strong>New events go to the calendar you choose</strong> — pick your default in Settings → Notch Island → Calendar.</li>
+<li><strong>Tap a reminder in the timeline</strong> to jump straight to it in the Reminders tab.</li>
+<li><strong>Fixed: quick-add read some dates as the wrong century.</strong> Typing a short date like <code>8/5/26</code> could be stored as 1926.</li>
+<li><strong>Quick-add is ready to type the moment it opens</strong> — the title field takes focus immediately, including when you open it with the keyboard shortcut.</li>
+</ul>
+<h3>Fixes 🐛</h3>
+<ul>
+<li><strong>Fixed: the menu bar flashing over the island when you clicked a tab.</strong> Focusing a tab briefly dropped the island beneath the menu bar, and it took up to two seconds to right itself. It no longer slips at all.</li>
+<li><strong>Fixed: permissions being attributed to the wrong copy of BarKeep</strong>, which could make macOS forget grants you had already given.</li>
+</ul>
+<h2>BarKeep 1.0.1</h2>
+<h3>Meetings don't slow BarKeep down any more 🎥</h3>
+<ul>
+<li><strong>Fixed: clicks getting swallowed while you were on a call.</strong> BarKeep's volume and brightness keys</li>
+</ul>
+<p>sit in a checkpoint that every input event passes through, and that checkpoint was waiting behind   BarKeep's own interface. During a call it could hold your input for <strong>several seconds</strong> — which is   why clicks needed a second try, windows stopped responding, and text selected itself as you moved   the mouse.</p>
+<ul>
+<li><strong>Fixed: the island crawling open during meetings.</strong> Reading the meeting's mute and camera state</li>
+</ul>
+<p>meant walking the meeting window's entire accessibility tree — thousands of lookups — on the same   thread that draws everything. It now happens in the background, so the island, News and every tab   stay responsive mid-call.</p>
+<ul>
+<li><strong>The island now goes still during calls.</strong> While your microphone or camera is live, the music</li>
+</ul>
+<p>spectrum, the scrolling title and the idle animation pause. They pick straight back up when the   call ends. Video calls already push your Mac's display system hard, and BarKeep no longer adds to   it for animations you aren't looking at.</p>
+<h3>Menu-bar arranging behaves itself 🖱</h3>
+<ul>
+<li><strong>Fixed: your pointer appearing to move on its own</strong> after BarKeep rearranged an icon. Your mouse</li>
+</ul>
+<p>is now released for the moment the move takes, so the cursor ends up where you actually put it.</p>
+<ul>
+<li><strong>Fixed: the reveal bar appearing while you dragged items</strong> between the shown and hidden sections</li>
+</ul>
+<p>— BarKeep was mistaking its own arranging for one of your gestures.</p>
+<h3>New: AI Sessions 🤖</h3>
+<ul>
+<li>A new <strong>AI Sessions</strong> page in Settings, with a matching tab in the mobile companion app.</li>
+</ul>
+<h2>BarKeep 1.0.0</h2>
+<p>The first stable release. BarKeep requires <strong>macOS 15 (Sequoia) or later</strong>.</p>
+<h3>One app for your menu bar and your notch ✨</h3>
+<ul>
+<li><strong>Tidy the menu bar</strong> — a Hidden section and an Always-Hidden section, revealed by click, hover, a two-finger swipe, a hot corner, a keyboard shortcut, or a drop-down bar. Drag your icons into the order you want and it sticks.</li>
+<li><strong>Presets and triggers</strong> so your bar changes itself depending on the app you're in, the display you're on, or the time of day.</li>
+<li><strong>Nothing gets lost.</strong> When macOS runs out of room it silently drops icons; BarKeep moves them somewhere you can still reach them.</li>
+<li><strong>Style it</strong> — tint, opacity, gradients, borders, rounded corners, or split the bar around the notch.</li>
+</ul>
+<h3>The notch, put to work 🏝</h3>
+<p>An island over the notch — or a floating pill if your Mac hasn't got one — with <strong>Home</strong> blocks you arrange yourself, plus Music, Calendar, Meetings, Weather, News, Email, Notifications, Files &amp; Shelf, Clipboard, Notes, AI Agents, Battery, Live Activities and a built-in Terminal. Volume and brightness get proper HUDs instead of the system ones.</p>
+<h3>Friends, chat and games 👥</h3>
+<p>Create an account to sync your settings between Macs, add friends, chat, see who's around, and play together — over the local network or online.</p>
+<h3>BarKeep Premium 💳</h3>
+<p><strong>Everything on your own Mac and your local network stays free, forever.</strong> That includes accounts, friends, presence, reading messages, and playing over LAN.</p>
+<p>Premium covers the three things that cost us server time: <strong>hosting</strong> online games (your friends can always join for free), <strong>sending</strong> messages (receiving is always free), and <strong>pushing</strong> your settings to the cloud (pulling them back is free). Available monthly or as a one-time lifetime purchase — and if you're on monthly you can move to lifetime any time, with what you've already paid this period credited.</p>
+<h3>Also in this release</h3>
+<ul>
+<li>A <strong>Feedback</strong> page in Settings, so you can tell us what's wrong without leaving the app.</li>
+<li>Settings now looks properly native — a floating sidebar, grouped rows, and it follows your Mac's sidebar size.</li>
+<li>Crash reports carry readable stack traces, so problems get fixed rather than guessed at.</li>
+</ul>
+</body>
+</html>
