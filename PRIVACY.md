@@ -1,6 +1,6 @@
 # BarKeep — Privacy Policy
 
-Last updated: 2026-10-13
+Last updated: 2026-10-31
 
 BarKeep is a menu bar and notch app for macOS with companion apps for iPhone and Android,
 developed by RedDeer, Inc. This policy explains what data BarKeep accesses and how it is handled.
@@ -177,6 +177,12 @@ What the app sends to our servers and we keep:
   name) and whether the device is a phone or a Mac, so you stay signed in per device and relayed
   data reaches the right one. We also keep when each device last connected. Signing out ends that
   device's session.
+- Notifications: when you allow them on your phone, the notification address your phone's system
+  gives the app, whether it is an iPhone or an Android phone, which BarKeep app it is, whether
+  notifications are on, and when one last reached the phone or failed to. We delete these when that
+  phone signs out while online and when you delete your account. Which kinds of notification you
+  want syncs to your account with or without Premium, because our server reads it to decide what to
+  send
 - Notes, game scores, favourites and game options, and settings you change from the phone, synced
   to your account until you delete them or the account. On iPhone, and on Android from the next
   update, they sync only with Premium. Without it your changes stay on the phone, deletions
@@ -225,8 +231,9 @@ What passes through our servers without being kept:
   memory, battery and whether it is locked), what it is playing with the cover art, its reminders
   and, while clipboard sharing is on in the Mac app (it is on by default), the text of recent
   clipboard entries and the names of copied files, plus the commands you send back.
-- AI sessions: the prompts you type, the replies and reasoning, the tool activity the session
-  reports (file paths, file contents it read or changed, commands and their output), permission
+- AI sessions: the prompts you type and any pictures you attach, the replies and reasoning, the
+  tool activity the session reports (file paths, file contents it read or changed, commands and
+  their output), permission
   requests and questions, including ones from Claude Code sessions running elsewhere on your Mac,
   and your answers, your list of current and past sessions with their titles, folders and
   settings, when each was last used and which app it runs in, the cost, token use and usage limits
@@ -239,6 +246,14 @@ What passes through our servers without being kept:
   first prompt or answer, and you can withdraw it in Settings under AI data sharing. The
   permission covers only what the phone sends into a session, your prompts and answers, the rest
   of what is listed here can pass between your phone and your Mac without it
+- Notifications: the text of each notification goes to Google (Firebase Cloud Messaging) for an
+  Android phone or to Apple (Apple Push Notification service) for an iPhone, and they deliver it
+  under their own privacy policies. For a chat message it is your friend's display name and the
+  start of the message, or only "New message" when you and your friend have both turned chat
+  history off. For an AI session it is a short summary of what happened, at most 160 characters
+  with anything that looks like a password or a key hidden, and the name of the session's folder.
+  Your Mac sends AI notifications for chats you started on your phone, and for other sessions only
+  while nobody is using the Mac. Nothing is sent while BarKeep is open on your phone's screen
 
 Everything travels over encrypted connections (HTTPS and secure WebSockets). Our hosting
 provider's request logs record the IP address of every request the app makes, and our own logs
