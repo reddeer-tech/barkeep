@@ -6,12 +6,24 @@
         <description>Most recent updates for BarKeep</description>
     <language>en</language>
     <item>
-            <title>BarKeep 1.0.25</title>
-            <link>https://github.com/reddeer-tech/barkeep/releases/download/v1.0.25/BarKeep-1.0.25-macos.dmg</link>
-      <sparkle:version>55</sparkle:version>
-      <sparkle:shortVersionString>1.0.25</sparkle:shortVersionString>
+            <title>BarKeep 1.0.26</title>
+            <link>https://github.com/reddeer-tech/barkeep/releases/download/v1.0.26/BarKeep-1.0.26-macos.dmg</link>
+      <sparkle:version>56</sparkle:version>
+      <sparkle:shortVersionString>1.0.26</sparkle:shortVersionString>
             <description><![CDATA[
 <h1>What's New</h1>
+<h2>BarKeep 1.0.26</h2>
+<h3>Claude Code on your phone</h3>
+<ul>
+<li>A chat you continue from your phone keeps the model, effort and Ultracode it had on your Mac</li>
+<li>Ultracode is its own switch, at any effort, like in Claude Code on your Mac</li>
+</ul>
+<h3>Lighter</h3>
+<ul>
+<li>Following your Claude Code sessions takes a fraction of the CPU it did, most of all on a Mac with a long history of sessions</li>
+<li>A download no longer keeps the island redrawing in the background</li>
+<li>Starting a game does less work before it opens</li>
+</ul>
 <h2>BarKeep 1.0.25</h2>
 <h3>Claude Code on your phone</h3>
 <ul>
@@ -412,12 +424,12 @@
 <li>Crash reports carry readable stack traces, so problems get fixed rather than guessed at.</li>
 </ul>
 ]]></description>
-            <pubDate>Wed, 11 Nov 2026 23:34:49 GMT</pubDate>
+            <pubDate>Thu, 12 Nov 2026 03:13:20 GMT</pubDate>
       <enclosure 
-                url="https://github.com/reddeer-tech/barkeep/releases/download/v1.0.25/BarKeep-1.0.25-macos.dmg" 
-                length="127410778" 
+                url="https://github.com/reddeer-tech/barkeep/releases/download/v1.0.26/BarKeep-1.0.26-macos.dmg" 
+                length="127476990" 
         type="application/octet-stream" 
-                sparkle:edSignature="2b0bRt5NIp0JKehLJXTkbc3zf6L8UmL/1TJ7iDhh8rAwbLq1R5fBD9ZqSzcfPpox4U5Ao886+pGg5m8Qxg4DCw==" />
+                sparkle:edSignature="icicsKrpn+r0aq/8Gia9RUL7vZF9XAepwFYk+Rddhf1Zidhf1+X64SqqBtYZDm5cc1GepQOqSA0wEkjKZCXSDQ==" />
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
     </item>
   </channel>
