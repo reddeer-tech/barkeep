@@ -1,6 +1,6 @@
 # BarKeep — Privacy Policy
 
-Last updated: 2026-10-31
+Last updated: 2026-11-16
 
 BarKeep is a menu bar and notch app for macOS with companion apps for iPhone and Android,
 developed by RedDeer, Inc. This policy explains what data BarKeep accesses and how it is handled.
@@ -173,8 +173,9 @@ What the app sends to our servers and we keep:
 - Your account: email address, password (stored only as a hash), optional display name, account
   ID and friend code (the phone app calls it your account code). We also keep when you last signed
   in, and when you first signed in on a phone and on a Mac
-- Your devices: a random ID the app creates when installed, a device label (the device's network
-  name) and whether the device is a phone or a Mac, so you stay signed in per device and relayed
+- Your devices: a random ID the app creates when installed, a device label (the device's name: its
+  computer name, its network name or a name you gave it) and whether the device is a phone or a Mac,
+  so you stay signed in per device and relayed
   data reaches the right one. We also keep when each device last connected. Signing out ends that
   device's session.
 - Notifications: when you allow them on your phone, the notification address your phone's system
