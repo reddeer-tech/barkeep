@@ -1,6 +1,6 @@
 # BarKeep — Privacy Policy
 
-Last updated: 2026-11-16
+Last updated: 2026-11-21
 
 BarKeep is a menu bar and notch app for macOS with companion apps for iPhone and Android,
 developed by RedDeer, Inc. This policy explains what data BarKeep accesses and how it is handled.
@@ -89,8 +89,8 @@ Creating a BarKeep account (free) enables friends, chat, online multiplayer, and
 sync. Sending messages, hosting online games or inviting friends to them, and cloud settings sync
 from the Mac need Premium. When you use these, RedDeer's servers store:
 
-- **Account**: your email address, display name, and a hashed password (never the password
-  itself), plus your friend code.
+- **Account**: your email address, display name, a hashed password if you set one (never the
+  password itself) and whether you confirmed your email address, plus your friend code
 - **Friends & chat**: your friend list, requests, blocks and your messages. A message is deleted
   once delivered only when you and your friend have both turned chat history off (the switch is
   in the Mac app), and turning it off does not delete messages already stored.
@@ -101,6 +101,28 @@ from the Mac need Premium. When you use these, RedDeer's servers store:
 - **Presence**: your friends see whether you are online, away or offline unless you turn that off
   in Settings, Account. Even with it off, someone who knows your friend code and invites you to an
   online game can tell when the invite reaches a device where BarKeep is open.
+
+### Signing in with Apple or Google, and email codes
+
+You can create or sign in to your account with Apple or Google instead of a password. Apple or
+Google then sends us an identifier for your account with them and your email address, which with
+Apple can be a private relay address if you chose Hide My Email. We keep that identifier, the
+address it came with and when it was last used, linked to your BarKeep account, and no Apple or
+Google password or token. If Apple or Google shares your name, the app only uses it to suggest your
+display name, which you can change before it is saved
+
+To confirm your email address, reset your password or change your address, we email you a 6-digit
+code. A code works for 15 minutes and we store only a keyed hash of it, never the code itself.
+These emails are sent through Google Workspace, with Resend as a backup when Google cannot send,
+and both receive your email address and the email's text to deliver it. To limit how many emails
+one address or network can trigger, we keep a keyed hash of your email address, never the address
+itself, for up to a day
+
+Before the app emails a code to an address you typed, it checks that the request comes from a
+genuine copy of BarKeep: on the Mac with a Cloudflare Turnstile check that opens in your browser
+(Cloudflare sees your IP address and browser details, as its own privacy policy describes), on
+iPhone with Apple's App Attest and on Android with Google Play Integrity. For App Attest we keep the
+public key your iPhone made for that copy of BarKeep, which is not linked to your account
 
 **Deleting your account** (on the Mac: Settings, Account; on the phone: Settings, Manage account)
 closes it straight away, and we erase the data above 30 days later. Without the
@@ -170,7 +192,7 @@ to us.
 
 What the app sends to our servers and we keep:
 
-- Your account: email address, password (stored only as a hash), optional display name, account
+- Your account: email address, password if you set one (stored only as a hash), optional display name, account
   ID and friend code (the phone app calls it your account code). We also keep when you last signed
   in, and when you first signed in on a phone and on a Mac
 - Your devices: a random ID the app creates when installed, a device label (the device's name: its
