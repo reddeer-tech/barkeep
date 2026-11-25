@@ -6,12 +6,21 @@
         <description>Most recent updates for BarKeep</description>
     <language>en</language>
     <item>
-            <title>BarKeep 1.0.38</title>
-            <link>https://github.com/reddeer-tech/barkeep/releases/download/v1.0.38/BarKeep-1.0.38-macos.dmg</link>
-      <sparkle:version>68</sparkle:version>
-      <sparkle:shortVersionString>1.0.38</sparkle:shortVersionString>
+            <title>BarKeep 1.0.40</title>
+            <link>https://github.com/reddeer-tech/barkeep/releases/download/v1.0.40/BarKeep-1.0.40-macos.dmg</link>
+      <sparkle:version>70</sparkle:version>
+      <sparkle:shortVersionString>1.0.40</sparkle:shortVersionString>
             <description><![CDATA[
 <h1>What's New</h1>
+<h2>BarKeep 1.0.40</h2>
+<ul>
+<li>Fix: Hidden icons hide again on their own after you show them with the arrow</li>
+<li>Fix: Hidden icons that showed up by themselves now hide again on their own</li>
+</ul>
+<h2>BarKeep 1.0.39</h2>
+<ul>
+<li>Fix: Hidden icons hide again on their own after you show them with the arrow</li>
+</ul>
 <h2>BarKeep 1.0.38</h2>
 <ul>
 <li>Fix: Hidden icons could show beside the island, with empty space on the other side</li>
@@ -494,12 +503,12 @@
 <li>Crash reports carry readable stack traces, so problems get fixed rather than guessed at.</li>
 </ul>
 ]]></description>
-            <pubDate>Wed, 25 Nov 2026 14:56:48 GMT</pubDate>
+            <pubDate>Wed, 25 Nov 2026 21:45:53 GMT</pubDate>
       <enclosure 
-                url="https://github.com/reddeer-tech/barkeep/releases/download/v1.0.38/BarKeep-1.0.38-macos.dmg" 
-                length="128393584" 
+                url="https://github.com/reddeer-tech/barkeep/releases/download/v1.0.40/BarKeep-1.0.40-macos.dmg" 
+                length="128387276" 
         type="application/octet-stream" 
-                sparkle:edSignature="wJus6f+GNcZnPENBZaiaDPq2Xndh3mbCfTc7UcQ49/SEAby7wP+eXTOPBdSUWysRb6j8bRZQRq5HMWOq0mS/DA==" />
+                sparkle:edSignature="GzL5BJhcdfscKiTmKkjMS6WRPIr812uuoX8sOj/nr7JffmCoHsQ/+aCUQoQrRt4P3W/5oESiQ0TrmnhOQC/RDw==" />
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
     </item>
   </channel>
